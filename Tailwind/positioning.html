@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Your Webpage</title>
+		<link rel="stylesheet" href="../css/main.css" />
+
+		<style>
+			.custom {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 400px;
+				width: 180px;
+			}
+			.line {
+				background-color: red;
+				height: 400vh;
+				width: 2px;
+			}
+		</style>
+	</head>
+
+	<body class="flex justify-center">
+		<span class="line"></span>
+
+		<div class="pt-6" style="height: 400vh; width: 800px">
+			<div
+				class="relative grid grid-cols-4 grid-rows-2 gap-1 border border-blue-500"
+			>
+				<div class="absolute right-0 top-10 custom bg-purple-500 p-1">
+					i'm absolute. document and others think i'm not existing. so
+					i can position anywhere relatively my nearest positioned
+					ancestor(non-static). and i'm so powerful
+				</div>
+
+				<div class="fixed left-5 top-0 custom bg-pink-500 p-1">
+					i'm always fixed. Like absolute, document and others think
+					i'm not existing. So i don't care nearest positioned
+					ancestor. i only care for entire HTML element. I position
+					fixed in my original location if you don't set right, top,
+					left, or bottom. i exist where i want to be. Even you
+					scroll... ha ha ha....
+				</div>
+
+				<div class="custom bg-red-500"><h2>&#128512;</h2></div>
+				<div class="custom bg-purple-500"><h2>&#128512;</h2></div>
+				<div class="custom bg-gray-500"><h2>&#128512;</h2></div>
+				<div class="custom bg-orange-500"><h2>&#128512;</h2></div>
+				<div class="custom bg-yellow-500"><h2>&#128512;</h2></div>
+
+				<div class="sticky left-6 top-6 custom bg-blue-500 p-1">
+					i'm sticky.Others can't ignore me. i take my place. i
+					overlap any of others except relative once. no effect until
+					left/top/right/bottom properties are set.i work only when my
+					container create scrollable area. My container has no
+					defined height. so i'm not working.
+				</div>
+
+				<div class="relative left-14 top-5 custom bg-green-500 p-1">
+					i'm relative
+				</div>
+
+				<div class="custom bg-red-500"><h2>&#128512;</h2></div>
+			</div>
+			<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
+			<div class="sticky left-10 top-6 custom bg-blue-500 p-1">
+				i'm sticky.Others can't ignore me. i take my place. i overlap
+				any of others except relative once. no effect until
+				left/top/right/bottom properties are set. My container has 400vh
+				height. so i'm working. to check scroll both direction.
+			</div>
+
+			<div
+				class="grid grid-cols-4 grid-rows-2 gap-4 mt-6 border border-purple-500"
+			>
+				<div class="relative left-14 top-5 custom bg-green-500 p-1">
+					i'm relative, i'm moving around relatively to my original
+					position and i overlap any of others
+				</div>
+
+				<div class="custom bg-yellow-500"><h2>&#128512;</h2></div>
+			</div>
+		</div>
+		<span class="line"></span>
+	</body>
+</html>

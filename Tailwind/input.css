@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+    .my-custom-style {
+        gridColumn: "span 2";
+        gridRow: "span 1";
+        backgroundColor: "#3490dc";
+        height: "25%";
+    }
+  } */

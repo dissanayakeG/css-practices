@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Your Webpage</title>
+    <script>
+        function toggle() {
+            const leftNavBar = document.getElementById("navBar");
+            leftNavBar.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="relative space-y-6 px-6 font-sans">
+
+    <!-- Nav Section -->
+    <div class="absolute top-0 left-0 w-full border border-blue-500 h-10 md:h-16">
+
+        <span class="block p-2 md:hidden" onclick="toggle()">:::</span>
+		
+        <nav id="navBar" class="hidden md:flex items-center justify-between p-2 md:h-full text-xl text-white bg-gray-700 border border-gray-200 dark:bg-gray-900">
+            <div>Nav Link #</div>
+            <div>Nav Link #</div>
+            <div>Nav Link #</div>
+            <div>Nav Link #</div>
+            <div>Nav Link #</div>
+
+            <span class="flex md:hidden border rounded-full w-6 h-6 items-center justify-center p-2" onclick="toggle()">x</span>
+        </nav>
+    </div>
+	
+    <!-- Body Section -->
+    <div class="absolute top-10  left-0 v z-[-1] md:top-16 border border-red-500 text-xl px-2 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+        assumenda exercitationem iure quod, ipsam excepturi id dolorem
+        deleniti alias quia fugit, aperiam consequuntur distinctio
+        voluptatum corporis quaerat cum! Cum, accusantium.
+    </div>
+</body>
+
+</html>
